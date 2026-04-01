@@ -65,7 +65,7 @@
             color: var(--accent);
         }
         .navbar-logo {
-            height: 40px;
+            height: 80px;
         }
         .hero {
             height: 60vh;
@@ -140,6 +140,19 @@
             width: 100%;
             padding-top: 40px;
         }
+        .flames img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .flames {
+            position: absolute;
+            bottom: 40%;
+            left: 0;
+            width: 100%;
+            z-index: -3;
+            pointer-events: none;
+        }
     </style>
 </head>
 
@@ -163,7 +176,9 @@
             </div>
         </div>
     </nav>
-
+    <div class="flames">
+        <img src="flames.png" alt="Flames">
+    </div>
     <section class="hero" id="parallax">
         <div>
             <h1>WELCOME TO THE <span class="accent">CLUB</span></h1>

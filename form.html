@@ -117,15 +117,30 @@
             color: var(--accent);
         }
         .navbar-logo {
-            height: 40px;
+            height: 80px;
         }
         body {
             padding-top: 90px;
+        }
+        .flames {
+            margin: 0px;
+            padding: 0px;
+            position: fixed;
+            width: 100vw;
+            display: block;
+            height: auto;
+            bottom: 0;
+            left: 0;
+            z-index: -100;
+            pointer-events: none;
         }
     </style>
 </head>
 
 <body>
+    <div class="flames">
+        <img class="flames" src="flames.png" alt="Flames">
+    </div>
     <nav class="top-navbar">
         <div class="nav-inner">
             <div class="nav-links nav-left">
